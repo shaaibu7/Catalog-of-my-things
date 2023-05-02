@@ -1,8 +1,8 @@
- require_relative './item.rb'
- 
- class label < Item
+require_relative './item'
 
-  def initialize(title, color, items)
+class Label < Item
+  def initialize(title, color, _items)
+    super
     @id = round(0..1000)
     @title = title
     @color = color
@@ -12,4 +12,4 @@
   def add_item(item)
     @items << item unless @item.exist?(item)
   end
- end
+end
