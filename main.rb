@@ -11,4 +11,5 @@ class Main
     app.run(key)
   end
   puts 'Well come to our Application'
+  puts 'The platfrom where you manage your things'
 end
