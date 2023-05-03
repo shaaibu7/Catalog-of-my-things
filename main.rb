@@ -1,4 +1,4 @@
-require_relative './all_class/app.rb'
+require_relative './all_class/app'
 
 def welcome
   puts '================================='
@@ -30,7 +30,7 @@ def run_program(option, app)
   end
 end
 
-def main 
+def main
   app = App.new
   welcome
   loop do

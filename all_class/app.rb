@@ -1,5 +1,5 @@
-require_relative './book.rb'
-require_relative './label.rb'
+require_relative './book'
+require_relative './label'
 require_relative './preserve_data'
 require 'date'
 
@@ -11,13 +11,17 @@ class App
 
   def list_books
     @books = read_file('./data/book.json')
-    puts 'No books yet'if @books.empty?
-    @books.each { |book| puts "BookID: #{book['object_id']} Publisher: #{book['publisher']} and Cover_state: #{book['cover_state']}" }
+    puts 'No books yet' if @books.empty?
+    @books.each do |book|
+      puts "BookID: #{book['object_id']} Publisher: #{book['publisher']} and Cover_state: #{book['cover_state']}"
+    end
   end
 
   def list_labels
     puts 'No label at the moment' if @labels.empty?
-    @labels.each { |label| puts "LabelID: #{label['object_id']} Title: #{label['title']} Color: #{label['color']} items: #{label['items']}"}
+    @labels.each do |label|
+      puts "LabelID: #{label['object_id']} Title: #{label['title']} Color: #{label['color']} items: #{label['items']}"
+    end
   end
 
   def create_book

@@ -1,6 +1,6 @@
 require_relative './item'
 
-class Label < Item
+class Label
   def initialize(title, color)
     @id = Random.rand(0..50)
     @title = title
