@@ -11,6 +11,5 @@ describe Book do
       book = Book.new('2022-11-12', 'sammy', 'bad')
       expect(book.can_be_archived?).to eq true
     end
-    
   end
 end

@@ -1,4 +1,4 @@
-require_relative '../all_class/label.rb'
+require_relative '../all_class/label'
 
 describe Label do
   before :each do
@@ -11,7 +11,7 @@ describe Label do
 
     it 'Should add an item to the item array' do
       @item = Item.new('2023-11-3')
-      @item.label(@label)
+      @item.add_label(@label)
       expect(@label.items).to include(@item)
     end
   end
