@@ -59,11 +59,7 @@ class App
     publish_date = Date.parse(gets.chomp)
     puts 'Is the game a multiplayer mode:[true/false]'
     multiplayer = gets.chomp
-    if multiplayer == 'true'
-      multiplayer = true
-    else 
-      multiplayer = false
-    end
+    multiplayer = multiplayer == 'true'
     puts 'When was this game last played: [yyyy/mm/dd]'
     last_played_at = Date.parse(gets.chomp)
     @games << Game.new(publish_date, multiplayer, last_played_at)

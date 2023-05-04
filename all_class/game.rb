@@ -22,5 +22,4 @@ class Game < Item
       last_played_at: @last_played_at
     }
   end
-
 end
