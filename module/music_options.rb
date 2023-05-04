@@ -1,15 +1,15 @@
-require_relative '../all_class/music_album'
+require_relative '../all_class/music_albums'
 require_relative '../all_class/genre'
 
 module MusicModule
   def add_album
-    print 'Enter album Name: '
+    print 'Enter Album Name: '
     name = gets.chomp
-    print 'Enter album genre: '
+    print 'Enter Album Genre: '
     genre = gets.chomp
-    print 'Enter publish date: '
+    print 'Enter Publish Date: '
     publish_date = gets.chomp
-    print 'is it on Spotify? [Y/N]: '
+    print 'Is it on Spotify? [Y/N]: '
     on_spotify = gets.chomp.downcase
     on_spotify = on_spotify == 'y'
     MusicAlbum.new(on_spotify)
