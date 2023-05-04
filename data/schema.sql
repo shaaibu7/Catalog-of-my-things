@@ -11,6 +11,9 @@ create table item(
     PRIMARY KEY(id)
 );
 
+-- index --
+CREATE INDEX idx_genre_id ON item (genre_id)
+
 create table music_album(
 	id INT NOT NULL GENERATED ALWAYS AS IDENTITY,
 	genre_id INT,
