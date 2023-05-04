@@ -1,6 +1,8 @@
 require_relative './item'
 
 class Label
+  attr_reader :id, :title, :color, :items, :label
+
   def initialize(title, color)
     @id = Random.rand(0..50)
     @title = title
@@ -9,7 +11,7 @@ class Label
   end
 
   def add_item(item)
-    @items << item unless @item.includes?(item)
+    @items << item unless @item.include?(item)
     item.label == self unless item.label == self
   end
 
