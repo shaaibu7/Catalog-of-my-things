@@ -12,7 +12,11 @@ def display_options
   puts '2. List all labels'
   puts '3. Add a book'
   puts '4. Create label'
-  puts '5. quit the application'
+  puts '5. Create game'
+  puts '6. List games'
+  puts '7. Create author'
+  puts '8. List authors'
+  puts '9. quit the application'
 end
 
 def run_program(option, app)
@@ -25,6 +29,14 @@ def run_program(option, app)
     app.create_book
   when '4'
     app.create_label
+  when '5'
+    app.create_game
+  when '6'
+    app.list_games
+  when '7'
+    app.create_author
+  when '8'
+    app.list_authors
   else
     puts 'You entered a wrong input'
   end
@@ -36,7 +48,7 @@ def main
   loop do
     display_options
     option = gets.chomp
-    if option == '5'
+    if option == '9'
       app.exit_app
     else
       run_program(option, app)

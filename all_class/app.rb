@@ -1,12 +1,16 @@
 require_relative './book'
 require_relative './label'
 require_relative './preserve_data'
+require_relative './game'
+require_relative './author'
 require 'date'
 
 class App
   def initialize
     @books = read_file('./data/book.json')
     @labels = read_file('./data/label.json')
+    @games = read_file('./data/game.json')
+    @authors = read_file('./data/author.json')
   end
 
   def list_books
@@ -47,6 +51,47 @@ class App
     @labels << Label.new(title, color)
     write_file(@labels, './data/label.json')
     puts 'Label created sucessfully'
+  end
+
+  def create_game
+    puts '--------Create game---------'
+    puts 'Enter game publication date: [yyyy/mm/dd]'
+    publish_date = Date.parse(gets.chomp)
+    puts 'Is the game a multiplayer mode:[true/false]'
+    multiplayer = gets.chomp
+    multiplayer = multiplayer == 'true'
+    puts 'When was this game last played: [yyyy/mm/dd]'
+    last_played_at = Date.parse(gets.chomp)
+    @games << Game.new(publish_date, multiplayer, last_played_at)
+    write_file(@games, './data/game.json')
+    puts 'Game created successfully'
+  end
+
+  def list_games
+    @games = read_file('./data/game.json')
+    puts 'No games at the moment' if @games.empty?
+    @games.each do |game|
+      puts "GameID: #{game['object_id']} publish_data: #{game['publish_date']} multiplayer: #{game['multiplayer']} last_played_at: #{game['last_played_at']}"
+    end
+  end
+
+  def create_author
+    puts '----------Create author---------'
+    puts 'Enter firstname'
+    first_name = gets.chomp
+    puts 'Enter last_name'
+    last_name = gets.chomp
+    @authors << Author.new(first_name, last_name)
+    write_file(@authors, './data/author.json')
+    puts 'Author created successfully'
+  end
+
+  def list_authors
+    @author = read_file('./data/author.json')
+    puts 'No authors at the moment' if @author.empty?
+    @author.each do |author|
+      puts "AuthorID: #{author['object_id']} firstname: #{author['first_name']} last_name: #{author['last_name']} "
+    end
   end
 
   def exit_app
