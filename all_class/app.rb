@@ -18,6 +18,7 @@ class App
   end
 
   def list_labels
+    @labels = read_file('./data/label.json')
     puts 'No label at the moment' if @labels.empty?
     @labels.each do |label|
       puts "LabelID: #{label['object_id']} Title: #{label['title']} Color: #{label['color']} items: #{label['items']}"
