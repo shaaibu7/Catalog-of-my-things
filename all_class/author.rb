@@ -12,4 +12,14 @@ class Author
     @items << item
     item.author = self unless (item.author = self)
   end
+
+  def to_h
+    {
+      _class: self.class.name,
+      object_id: object_id,
+      first_name: @first_name,
+      last_name: @last_name,
+      items: @items
+    }
+  end
 end
