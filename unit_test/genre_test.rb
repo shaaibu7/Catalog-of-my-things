@@ -1,4 +1,4 @@
-require_relative 'spec_helper'
+require_relative 'helper_test'
 
 describe Genre do
   context '#initialize' do
