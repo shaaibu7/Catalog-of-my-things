@@ -17,7 +17,4 @@ describe Game do
     book = Game.new('2005-02-02', true, '2023-01-01')
     expect(book.can_be_archived?).to eq false
   end
-
-  
-   
 end
