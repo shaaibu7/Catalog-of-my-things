@@ -2,7 +2,8 @@
 
 CREATE TABLE authors(
   id INT GENERATED ALWAYS AS IDENTITY,
-  name VARCHAR(250) NOT NULL,
+  first_name VARCHAR(250) NOT NULL,
+  last_name VARCHAR(250) NOT NULL,
   PRIMARY KEY(id);
 );
 
@@ -36,5 +37,19 @@ CREATE TABLE book(
   label_id INT REFERENCES label(id),
   source_id INT REFERENCES source(id)
 );
+
+-- database schema for game and author class
+
+CREATE TABLE game(
+  id INT GENERATED ALWAYS AS IDENTITY,
+  publish_date DATE NOT NULL,
+  multiplayer BOOLEAN NOT NULL,
+  last_played_at DATE NOT NULL,
+  archived BOOLEAN NOT NULL,
+  author_id INT REFERENCES authors(id),
+  genre_id INT REFERENCES genre(id),
+  label_id INT REFERENCES label(id),
+  source_id INT REFERENCES source(id)
+)
 
 
