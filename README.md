@@ -66,7 +66,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://drive.google.com/drive/u/0/my-drive)
 
@@ -74,8 +73,6 @@
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -128,7 +125,6 @@ rspec spec rspec
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Shaaibu Suleiman**
 - GitHub: [@githubhandle](https://github.com/shaaibu7)
