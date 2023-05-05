@@ -9,10 +9,10 @@ describe Genre do
   end
   context '#add_item' do
     it 'sets the genre of an Item class\' instance to the instance of the Genre class' do
-      genre = Genre.new('action')
-      item = Item.new('2012/08/10')
-      new_genre = genre.add_item(item)
-      expect(new_genre.items[0].genre).to eq genre
+      @genre = Genre.new('action')
+      @item = Item.new('2012/08/10')
+      @item.add_genre(@genre)
+      expect(@genre.items).to include(@item)
     end
   end
 end

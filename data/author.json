@@ -1,16 +1,1 @@
-[
-  {
-    "_class": "Author",
-    "object_id": 60,
-    "first_name": "shaaibu",
-    "last_name": "suleiman",
-    "items": []
-  },
-  {
-    "_class": "Author",
-    "object_id": 80,
-    "first_name": "samaila",
-    "last_name": "kola",
-    "items": []
-  }
-]
+[{"_class":"Author","object_id":60,"first_name":"shaaibu","last_name":"suleiman","items":[]},{"_class":"Author","object_id":80,"first_name":"samaila","last_name":"kola","items":[]},{"_class":"Author","object_id":60,"first_name":"rfr","last_name":"edrde4","items":[]}]
