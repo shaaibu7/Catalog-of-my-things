@@ -12,4 +12,13 @@ class MusicAlbum < Item
   def can_be_archived?
     @on_spotify == true && super
   end
+
+  def to_h
+    {
+      _class: self.class.name,
+      object_id: object_id,
+      on_spotify: @on_spotify,
+      publish_date: @publish_date
+    }
+  end
 end
