@@ -1,15 +1,13 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
 
 </div>
 
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -33,7 +31,6 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
@@ -68,29 +65,32 @@
   </ul>
 </details>
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Creating album]**
+- **[Creating book class]**
+- **[Creating music class]**
+
+
+ <div align="center">
+    <img alt="gif" src="./catalog_of_my_things.png" width=100% />
+    <p>UML class diagram of Catalog of my things project</p>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://drive.google.com/drive/u/0/my-drive)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -98,115 +98,82 @@
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+```shell
+https://github.com/shaaibu7/Catalog-of-my-things.git
+cd Catalog-of-my-things
 ```
---->
 
-### Install
+### Install dependencies
 
-Install this project with:
+Using [Bundler](https://github.com/bundler/bundler) and [Yarn](https://github.com/yarnpkg/yarn):
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
+```shell
+bundle install
 ```
---->
 
-### Usage
+or
 
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
+```shell
+yarn install
 ```
---->
 
-### Run tests
+### run program demo
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
+```shell
+ruby main.rb
 ```
---->
 
-### Deployment
+### run test
 
-You can deploy this project using:
+To run a single Rspec test file, you can do the following to run the tests in the `your_spec.rb` file:
 
-<!--
-Example:
-
-```sh
-
+```shell
+rspec spec rspec/book_test_spec.rb
 ```
- -->
+
+To run all Rspec test files in a directory
+
+```shell
+rspec spec rspec
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Shaaibu Suleiman**
+- GitHub: [@githubhandle](https://github.com/shaaibu7)
+- Twitter: [@twitterhandle](https://twitter.com/SuleimanShaaibu?t=EAqVJrP59poEb2W46kK9vg&s=09)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shaaibu-suleiman-119271206)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
+👤 **Habtamu**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Habtamu210](https://github.com/Habtamu210)
+- Twitter: [@beleyaha](https://twitter.com/beleyaha)
+- LinkedIn: [@habtamu-](https://www.linkedin.com/in/habtamu-birru/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Implementing object oriented features between instances]**
+- [ ] **[Add new features to the albums]**
+- [ ] **[Creating Interactive user interfaces]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -226,7 +193,6 @@ If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -236,23 +202,6 @@ I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
