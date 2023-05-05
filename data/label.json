@@ -1,0 +1,58 @@
+[
+  {
+    "_class": "Label",
+    "object_id": 60,
+    "title": "kaka",
+    "color": "pik",
+    "items": []
+  },
+  {
+    "_class": "Label",
+    "object_id": 60,
+    "title": "party",
+    "color": "red",
+    "items": []
+  },
+  {
+    "_class": "Label",
+    "object_id": 80,
+    "title": "chrismas",
+    "color": "red",
+    "items": []
+  },
+  {
+    "_class": "Label",
+    "object_id": 60,
+    "title": "parto",
+    "color": "blue",
+    "items": []
+  },
+  {
+    "_class": "Label",
+    "object_id": 60,
+    "title": "cruz",
+    "color": "ash",
+    "items": []
+  },
+  {
+    "_class": "Label",
+    "object_id": 60,
+    "title": "vgvg",
+    "color": "vvg",
+    "items": []
+  },
+  {
+    "_class": "Label",
+    "object_id": 80,
+    "title": "label0",
+    "color": "orange",
+    "items": []
+  },
+  {
+    "_class": "Label",
+    "object_id": 60,
+    "title": "perl",
+    "color": "gold",
+    "items": []
+  }
+]
