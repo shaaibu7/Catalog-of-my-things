@@ -3,9 +3,6 @@
 <div align="center">
    <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 
@@ -32,17 +29,14 @@
 - [📝 License](#license)
 
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Catalog of my things] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Catalog of my things]** This is a command line based app that manages the catalog of things for a user ranging from books, music album, and games
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
  
 <details>
@@ -56,7 +50,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **[Creating album]**
 - **[Creating book class]**
