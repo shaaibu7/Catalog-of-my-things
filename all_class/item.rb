@@ -22,9 +22,9 @@ class Item
     genre.items << self unless genre.items.include?(self)
   end
 
-  def author=(author)
+  def add_author(author)
     @author = author
-    author.items << self unless author.items.exist?(self)
+    author.items << self unless author.items.include?(self)
   end
 
   def source=(source)
